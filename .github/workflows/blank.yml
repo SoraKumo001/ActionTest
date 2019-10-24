@@ -10,3 +10,6 @@ jobs:
       run: |
         echo lsコマンドを使ってみる
         ls -la
+        pwd
+        ls -la /
+        set
