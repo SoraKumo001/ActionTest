@@ -8,5 +8,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: ActionTest
       run: |
-        echo ふぉっふぉっふぉっふぉ
-        echo ぐふぉぉ
+        echo lsコマンドを使ってみる
+        ls -la
