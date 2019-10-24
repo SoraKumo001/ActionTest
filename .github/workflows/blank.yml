@@ -13,6 +13,5 @@ jobs:
         ls -la ..
         pwd
         ls -la /
-        node
-        gcc
+        node -v
         
