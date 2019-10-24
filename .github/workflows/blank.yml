@@ -8,10 +8,12 @@ jobs:
     - uses: actions/checkout@v1
     - name: ActionTest
       run: |
-        echo 色々実験
-        ls -la
-        ls -la ..
-        pwd
-        ls -la /
+        echo nodeのバージョン
         node -v
+        echo テキスト作成 > ../test.txt
+        echo ファイルリスト
+        ls -la ..
+        echo ルートファイル
+        ls -la /
+
         
