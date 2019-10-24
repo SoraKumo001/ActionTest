@@ -8,8 +8,11 @@ jobs:
     - uses: actions/checkout@v1
     - name: ActionTest
       run: |
-        echo lsコマンドを使ってみる
+        echo 色々実験
         ls -la
+        ls -la ..
         pwd
         ls -la /
-        set
+        node
+        gcc
+        
