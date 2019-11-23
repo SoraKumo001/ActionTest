@@ -9,5 +9,12 @@ jobs:
     - name: ActionTest
       run: |
         export
-
+    - name: version-test
+      if: contains(github.ref, 'refs/tags')
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      run: |
+        version=($(echo "refs/tags/lastest-1.0.0" | sed -n -r 's/^refs\/tags\/(.*?)-(.*?).*$/\1 \2/p'))
+        echo tag: ${version[0]}
+        echo ver: ${version[1]}
         
